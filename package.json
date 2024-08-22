@@ -26,7 +26,7 @@
     "@vitejs/plugin-vue": "^5.1.2",
     "@vue/runtime-core": "^3.4.38",
     "gulp": "^5.0.0",
-    "gulp-autoprefixer": "^9.0.0",
+    "gulp-autoprefixer": "^8.0.0",
     "gulp-less": "^5.0.0",
     "less": "^4.2.0",
     "sucrase": "^3.35.0",
