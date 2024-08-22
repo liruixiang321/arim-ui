@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:arim-ui": "gulp -f packages/components/script/build/index.ts",
+    "publish:arim-ui": "gulp -f packages/components/script/publish/index.ts",
     "dev": "pnpm -C play dev",
     "typecheck:web": "vue-tsc -p tsconfig.web.json --composite false --noEmit",
     "typecheck:play": "vue-tsc -p tsconfig.play.json --composite false --noEmit"
@@ -29,6 +30,7 @@
     "gulp-autoprefixer": "^8.0.0",
     "gulp-less": "^5.0.0",
     "less": "^4.2.0",
+    "release-it": "^17.6.0",
     "sucrase": "^3.35.0",
     "typescript": "^5.5.4",
     "vite": "^5.4.1",
