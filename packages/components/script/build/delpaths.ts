@@ -24,7 +24,7 @@ const delPath = async (path: string) => {
       }
     });
     // 如果
-    if (path != `${pkgPath}/easyest`) fs.rmdirSync(path);
+    if (path != `${pkgPath}/components/dist`) fs.rmdirSync(path);
   }
 };
 export default delPath;
