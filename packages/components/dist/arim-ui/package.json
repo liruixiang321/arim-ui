@@ -1,0 +1,34 @@
+{
+  "name": "arim-ui",
+  "version": "1.0.0",
+  "description": "一个基于vxe-table,antdv的vue3业务组件库",
+  "main": "lib/index.js",
+  "module": "es/index.mjs",
+  "files": [
+    "lib",
+    "es"
+  ],
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "arim-ui",
+    "vue3组件库"
+  ],
+  "author": "liruixiang",
+  "license": "MIT",
+  "typings": "lib/index.d.ts",
+  "dependencies": {
+    "arim-ui": "file:"
+  },
+  "scripts": {
+    "release": "release-it"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/liruixiang321/arim-ui.git"
+  }
+}
