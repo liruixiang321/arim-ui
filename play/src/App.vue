@@ -2,6 +2,7 @@
   import HelloWorld from "./components/HelloWorld.vue";
   import { Button } from "@arim-ui/components";
   //   import { Button } from "../../packages/arim-ui/es/src/index";
+  import { type } from "../../../jx-qms-front/src/layouts/default/tabs/types";
 </script>
 
 <template>
@@ -10,7 +11,7 @@
       <img src="/vite.svg" class="logo" alt="Vite logo" />
     </a>
 
-    <ar-button />
+    <ar-button type="primary" />
     <ar-button />
     <ar-button />
     <Button type="primary"></Button>
