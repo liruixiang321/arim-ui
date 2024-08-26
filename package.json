@@ -11,7 +11,9 @@
     "typecheck:web": "vue-tsc -p tsconfig.web.json --composite false --noEmit",
     "typecheck:play": "vue-tsc -p tsconfig.play.json --composite false --noEmit",
     "lint:script": "npx eslint  --fix --quiet ./",
-    "lint:style": "stylelint --fix \"**.{css,less}\""
+    "lint:style": "stylelint --fix \"**.{css,less}\"",
+    "prepare": "husky install",
+    "lint-staged": "lint-staged"
   },
   "keywords": [],
   "private": "true",
@@ -22,6 +24,8 @@
     "arim-ui": "file:"
   },
   "devDependencies": {
+    "@commitlint/cli": "^19.4.0",
+    "@commitlint/config-conventional": "^19.2.2",
     "@eslint/js": "^9.9.0",
     "@types/gulp": "^4.0.17",
     "@types/gulp-autoprefixer": "^0.0.37",
@@ -37,7 +41,9 @@
     "gulp": "^5.0.0",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-less": "^5.0.0",
+    "husky": "^9.1.5",
     "less": "^4.2.0",
+    "lint-staged": "^15.2.9",
     "postcss-html": "^1.7.0",
     "prettier": "^3.3.3",
     "release-it": "^17.6.0",
@@ -55,5 +61,10 @@
     "vite-plugin-dts": "^4.0.3",
     "vue": "^3.4.38",
     "vue-eslint-parser": "^9.4.3"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx,vue}": [
+      "eslint --ext .js,.jsx,.vue,.ts,.tsx --fix --quiet ./"
+    ]
   }
 }
